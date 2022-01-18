@@ -24,14 +24,14 @@ html, body {
 
 .slider {
 	height: 800px;
-	background-image: url(img/slider.jpg); 
+	background-image: url(/static/img/slider.jpg); 
 	padding-left: 98px;
 	padding-right: 211px;
 	position: relative;
 }
 
 .logo {
-	background-image: url(img/logo.png);
+	background-image: url(/static/img/logo.png);
 	margin-top: 63px;
 	width: 185px;
 	height: 22px;
@@ -75,7 +75,7 @@ html, body {
 	display: block;
 	width: 23px;
 	height: 23px;	
-	background-image: url(img/search.png);
+	background-image: url(/static/img/search.png);
 	position: absolute;
 	top: 63px;
 	left: 1176px;
@@ -84,7 +84,7 @@ html, body {
 	display: block;
 	width: 23px;
 	height: 23px;	
-	background-image: url(img/basket.png);
+	background-image: url(/static/img/basket.png);
 	position: absolute;
 	top: 63px;
 	left: 1210px;

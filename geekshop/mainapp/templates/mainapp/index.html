@@ -1,10 +1,10 @@
-{% extends 'base.html' %}
+{% extends 'mainapp/base.html' %}
 {% load static %}
 
 {% block header %}
 <div class="slider">
 	<div class="header clearfix">
-		{% include "includes/inc_main_menu.html" %}
+		{% include "mainapp/includes/inc_main_menu.html" %}
 	</div>
 	<div class="text-slider">
 		<h3 class="green">тенденции</h3>
@@ -27,18 +27,7 @@
 	<div class="clearfix">
 	</div>
 	<div class="tab-content">
-		{% for product in products %}
-			<div class="block">
-				<a href="#"><img class="product-image" src="/media/{{ product.image }}" alt="{{ product.short_desc }}"> 
-					<div class="text">
-						<img src="{% static "img/icon-hover.png" %}" alt="img">
-						<h3>{{ product.category.name }}</h3>
-						<h4>{{ product.name }}</h4>
-						<p>{{ product.description }}</p>
-					</div> 
-				</a>
-			</div>
-		{% endfor %}
+		{% include "mainapp/includes/inc_products.html" %}
 	</div>
 </div>
 {% endblock content %}

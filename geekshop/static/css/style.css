@@ -72,22 +72,12 @@ html, body {
 }
 
 .search {
-	display: block;
-	width: 23px;
-	height: 23px;	
-	background-image: url(/static/img/search.png);
-	position: absolute;
-	top: 63px;
-	left: 1176px;
+	width: 14px;
+	height: 14px;
 }
 .basket {
-	display: block;
-	width: 23px;
-	height: 23px;	
-	background-image: url(/static/img/basket.png);
-	position: absolute;
-	top: 63px;
-	left: 1210px;
+	width: 14px;
+	height: 14px;
 }
 
 .clearfix:after {

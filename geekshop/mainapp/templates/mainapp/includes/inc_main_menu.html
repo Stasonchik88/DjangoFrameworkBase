@@ -25,6 +25,15 @@
             <a href="{% url 'auth:login' %}">войти</a>
         {% endif %}
     </li>
+    <li>
+        <a href="{% url 'basket:view' %}" >корзина
+            <img class='basket' src="/static/img/basket.png" alt="корзина">
+            <span>
+                {% if basket %} {{ basket|length }} {% endif %}
+            </span>
+        </a>
+    </li>
+    <li>
+        <a href="#"><img class='search' src="/static/img/search.png" alt="поиск"></a>
+    </li>
 </ul>
-<a href="#" class="search"></a>
-<a href="#" class="basket"></a>

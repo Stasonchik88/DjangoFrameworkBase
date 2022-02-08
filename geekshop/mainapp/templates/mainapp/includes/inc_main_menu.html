@@ -29,7 +29,10 @@
         <a href="{% url 'basket:view' %}" >корзина
             <img class='basket' src="/static/img/basket.png" alt="корзина">
             <span>
-                {% if basket %} {{ basket|length }} {% endif %}
+                {% if basket %} 
+                    {{ basket.0.total_cost|floatformat:0 }} руб 
+                    ({{ basket.0.total_quantity }} шт)
+                {% endif %}
             </span>
         </a>
     </li>

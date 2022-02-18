@@ -78,10 +78,6 @@ def product(request, pk):
     return render(request, 'mainapp/product.html', content)
 
 
-def category(request, pk=None):
-    pass
-
-
 def contact(request):
     return render(request, 'mainapp/contact.html', context={
         'title': 'Контакты',

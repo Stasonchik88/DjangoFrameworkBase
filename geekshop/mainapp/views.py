@@ -4,11 +4,6 @@ from django.shortcuts import render, get_object_or_404
 from .models import ProductCategory, Product
 from basketapp.models import Basket
 
-MENU_LINKS = [
-    {'url': 'main', 'name': 'домой'},
-    {'url': 'products:index', 'name': 'продукты'},
-    {'url': 'contact', 'name': 'контакты'},
-]
 
 # Create your views here.
 def main(request):
@@ -17,7 +12,6 @@ def main(request):
 
     return render(request, 'mainapp/index.html', context={
         'title': 'Главная',
-        'menu_links': MENU_LINKS,
         'products': products,
         'basket': basket,
     })
@@ -57,7 +51,6 @@ def products(request, pk=None):
     
     return render(request, 'mainapp/products.html', context={
         'title': 'Продукты',
-        'menu_links': MENU_LINKS,
         'categories': categories,
         'category': category,
         'hot_product': hot_product,
@@ -85,5 +78,4 @@ def category(request, pk=None):
 def contact(request):
     return render(request, 'mainapp/contact.html', context={
         'title': 'Контакты',
-        'menu_links': MENU_LINKS,
     })
